@@ -1,0 +1,10 @@
+/Logs
+/Library
+/Temp
+/Assembly-CSharp.csproj
+/UserSettings
+.vsconfig
+.vs/
+Assets/UI\ Toolkit/
+obj/
+*.json
