@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private int score;
+    private float enemySpeed;
+    private bool slamming;
+
+    public static GameManager Instance;
+
+
+    public void Awake()
+    {
+        if (!Instance) Instance = this;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +28,16 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public void setIsSlamming(bool slam)
+    {
+        this.slamming = slam;
+    }
+
+    public bool isSlamming()
+    {
+        return this.slamming;
+    }
+
+
 }
